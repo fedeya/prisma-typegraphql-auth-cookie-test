@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  pg:
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: 'fede'
+      POSTGRES_DB: 'test'
+      POSTGRES_PASSWORD: '12345'
+    logging:
+      driver: none
